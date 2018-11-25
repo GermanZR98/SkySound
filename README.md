@@ -5,7 +5,7 @@ Cuenta con un login, un registro y un apartado de administrador
 
 Inicio de sesión de Usuario 
 
-<img src="SkySound/1.PNG">
+<img src="SkySound/imagenes/1.PNG">
 
 Registro de Usuario
 
