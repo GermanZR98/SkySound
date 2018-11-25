@@ -5,7 +5,7 @@ Cuenta con un login, un registro y un apartado de administrador
 
 Inicio de sesión de Usuario 
 
-<img src="1.PNG">
+<img src="imagenes/1.PNG">
 
 Registro de Usuario
 
