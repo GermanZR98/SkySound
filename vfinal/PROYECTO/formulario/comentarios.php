@@ -13,8 +13,6 @@ $sesion = session_start();
     $confirmationText = $_POST['confirmationText'];
     $usuario = $_SESSION['nombreusuario'];
 
-    $log = $_SESSION["nombreusuario"]; 
-
 
     $sql="insert into comentario (comentario, idcancion, nombre) values (:confirmationText, :idcancion, :usuario)";
 
