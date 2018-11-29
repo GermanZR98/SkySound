@@ -23,7 +23,6 @@
       $sesion = session_start();
 
       $_SESSION["uadmin"] = $nom;
-      $_SESSION["time"] = time();
       $_SESSION["session"] = serialize($sesion);
 
 
