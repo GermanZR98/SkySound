@@ -26,7 +26,6 @@
       //Almacenamos el nombre actual el tiempo actual 
       // serialize para almacenar los valores en PHP sin perder su tipo y estructura.
       $_SESSION["nombreusuario"] = $nom;
-      $_SESSION["time"] = time();
       $_SESSION["session"] = serialize($sesion);
 
 
