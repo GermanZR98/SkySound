@@ -64,7 +64,7 @@ echo "Bienvenido: ".$_SESSION["nombreusuario"]."</br>";
         $boton .='
 
         <form method="POST" action="comentarios.php">
-        <textarea  id="confirmationText" rows="5" cols="60" name="confirmationText"></textarea>"
+        <textarea  id="Text" rows="5" cols="60" name="confirmationText"></textarea>"
 
         <input type="submit" value="Email" class="submitButton">
         <input type="number" id="idProducto" value="'.$row->idcancion.'" hidden="hidden" name="idcancion">
