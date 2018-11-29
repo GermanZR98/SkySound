@@ -10,14 +10,14 @@ $sesion = session_start();
     if (isset($_POST['confirmationText'])) {
     $idcancion = $_POST['idcancion'];
 
-    $confirmationText = $_POST['confirmationText'];
+    $confirmationText = $_POST['Text'];
     $usuario = $_SESSION['nombreusuario'];
 
 
-    $sql="insert into comentario (comentario, idcancion, nombre) values (:confirmationText, :idcancion, :usuario)";
+    $sql="insert into comentario (comentario, idcancion, nombre) values (:Text, :idcancion, :usuario)";
 
     $consulta=$db->prepare($sql);
-    $consulta->bindParam(':confirmationText',$confirmationText, PDO::PARAM_STR);
+    $consulta->bindParam(':Text',$confirmationText, PDO::PARAM_STR);
     $consulta->bindParam(':idcancion', $idcancion, PDO::PARAM_STR);
     $consulta->bindParam(':usuario', $usuario, PDO::PARAM_STR);
     
