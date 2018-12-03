@@ -21,7 +21,7 @@ $sesion = session_start();
   <form role="form" method="POST">
     <div class="form-group">
       <label for="email">Busqueda:</label>
-      <input type="text" class="form-control" name="documento" placeholder="Busca un artista...">
+      <input type="text" class="form-control" name="art" placeholder="Busca un artista...">
     </div>
     <button type="submit" class="btn btn-default">Buscar</button>
 
@@ -43,7 +43,7 @@ echo "Bienvenido: ".$_SESSION["nombreusuario"]."</br>";
     if($_POST){
     require("../libs/conexion.php");
     $con = Conectar();
-    $id = $_POST["documento"];
+    $id = $_POST["art"];
     $SQL = "SELECT * FROM canciones WHERE artista like '%" .$id. "%' order by artista";
     $stmt = $con->prepare($SQL);
     $result = $stmt->execute(array(":doc"=>$id));
