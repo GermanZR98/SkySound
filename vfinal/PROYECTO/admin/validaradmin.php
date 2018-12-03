@@ -29,7 +29,7 @@
       header('location:loginadmin.php');
     } 
   } else {
-    echo "unlucky";
+    echo "error";
   }
 
 endif;
