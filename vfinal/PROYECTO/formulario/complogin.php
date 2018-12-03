@@ -33,7 +33,7 @@
       header('location:../index.php');
     } 
   } else {
-    echo "unluky";
+    echo "error";
   }
 
 endif;
