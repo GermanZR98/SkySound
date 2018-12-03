@@ -72,14 +72,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <header>
-<?php
-if (isset($_GET["exito"])):
-    echo "<h3 style=\"color: green\">El registro se ha realizado correctamente</h3>" ;
-   endif ;
-
-
-   
-?>
 </header>
 <body>
 	<div class="formOuter">
