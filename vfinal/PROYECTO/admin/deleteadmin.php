@@ -4,7 +4,9 @@
     $db= Database::getInstancia();
 
     $id = 0;
-     
+    
+//El del está en administración
+
     if (isset($_GET['del'])) {
         $id = $_GET['del'];
       
