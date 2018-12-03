@@ -1,7 +1,6 @@
 <?php
 
    if (isset($_POST["nom"]) && isset($_POST["pwd"])):
-    echo "estoy aqui";
    
     require_once "../libs/Database.php";
     $database = Database::getInstancia();
