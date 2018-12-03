@@ -48,6 +48,7 @@ echo "Bienvenido: ".$_SESSION["nombreusuario"]."</br>";
     $stmt = $con->prepare($SQL);
     $result = $stmt->execute(array(":doc"=>$id));
     //el fetchAll que te recoge un array con los datos
+     //el fetchobj que te recoge una fila y te devuelve un objeto
     $rows = $stmt->fetchAll(\PDO::FETCH_OBJ);
 
 
